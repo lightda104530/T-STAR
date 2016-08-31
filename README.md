@@ -19,7 +19,7 @@ T-STAR 是一個 **[PocketMine-MP](https://github.com/PocketMine/PocketMine-MP)*
 
 幫助 & 支援
 -------------
-If you have an issue, please make sure to check the [FAQs](https://github.com/iTXTech/Genisys/wiki/FAQs) page before opening any issues. We are constantly fixing issues and are continuously updating, so please also ensure that you are up-to-date before opening any issues.
+如果對有任何疑問 [FAQs](https://github.com/iTXTech/Genisys/wiki/FAQs)  我們會不定時更新說明.
 
 取得T-STAR
 -------------
