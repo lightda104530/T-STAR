@@ -17,9 +17,7 @@ T-STAR 是一個 **[PocketMine-MP](https://github.com/PocketMine/PocketMine-MP)*
 * 強制 Xbox Live 登入
 * 支援 Windows 10 Edition Beta
 
-However, Genisys still has a long way to go. We welcome contributions.
-
-Help & Support
+幫助 & 支援
 -------------
 If you have an issue, please make sure to check the [FAQs](https://github.com/iTXTech/Genisys/wiki/FAQs) page before opening any issues. We are constantly fixing issues and are continuously updating, so please also ensure that you are up-to-date before opening any issues.
 
