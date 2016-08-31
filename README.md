@@ -9,7 +9,7 @@ T-STAR-nuclear
 
 介紹
 -------------
-T-STAR is a fork of **[PocketMine-MP](https://github.com/PocketMine/PocketMine-MP)** and **[Genisys](https://github.com/iTXTech/Genisys)** most of the original code was written by **PocketMine Team** & **Genisys**.<br>
+T-STAR 是一個 **[PocketMine-MP](https://github.com/PocketMine/PocketMine-MP)** 的分支核心 多數代碼由 **PocketMine Team** & **iTX Technologies** 撰寫.<br>
 Some of the extended functionality that Genisys offers:
 
 * Extended API for plugins (GeniAPI)
