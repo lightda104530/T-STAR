@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir plugins
 curl -fsSL https://github.com/iTXTech/Genisys-DevTools/releases/download/1.0.0/Genisys-DevTools_v1.0.0.phar -o plugins/Genisys-DevTools.phar
-echo Running lint
+echo Running lint...
 shopt -s globstar
 for file in **/*.php; do
     OUTPUT=`php -l "$file"`
