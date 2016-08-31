@@ -10,12 +10,12 @@ T-STAR-nuclear
 介紹
 -------------
 T-STAR 是一個 **[PocketMine-MP](https://github.com/PocketMine/PocketMine-MP)** 的分支核心 多數代碼由 **PocketMine Team** & **iTX Technologies** 撰寫.<br>
-Some of the extended functionality that Genisys offers:
+由Genisys撰寫的新功能:
 
 * Extended API for plugins (GeniAPI)
-* Synapse Client support
-* Optional Xbox Live authentication
-* Support for Windows 10 Edition Beta
+* 支援 Synapse Client
+* 強制 Xbox Live 登入
+* 支援 Windows 10 Edition Beta
 
 However, Genisys still has a long way to go. We welcome contributions.
 
