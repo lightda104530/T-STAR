@@ -1,5 +1,4 @@
 <?php
-
 /*
  *
  *  ____            _        _   __  __ _                  __  __ ____
@@ -18,21 +17,15 @@
  *
  *
 */
-
 namespace pocketmine;
-
-
 use pocketmine\metadata\MetadataValue;
 use pocketmine\metadata\Metadatable;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\plugin\Plugin;
-
 class OfflinePlayer implements IPlayer, Metadatable{
-
 	private $name;
 	private $server;
 	private $namedtag;
-
 	/**
 	 * @param Server $server
 	 * @param string $name
@@ -46,39 +39,31 @@ class OfflinePlayer implements IPlayer, Metadatable{
 			$this->namedtag = null;
 		}
 	}
-
 	public function isOnline(){
 		return $this->getPlayer() !== null;
 	}
-
 	public function getName() : string{
 		return $this->name;
 	}
-
 	public function getServer(){
 		return $this->server;
 	}
-
 	public function isOp(){
 		return $this->server->isOp(strtolower($this->getName()));
 	}
-
 	public function setOp($value){
 		if($value === $this->isOp()){
 			return;
 		}
-
 		if($value === true){
 			$this->server->addOp(strtolower($this->getName()));
 		}else{
 			$this->server->removeOp(strtolower($this->getName()));
 		}
 	}
-
 	public function isBanned(){
 		return $this->server->getNameBans()->isBanned(strtolower($this->getName()));
 	}
-
 	public function setBanned($value){
 		if($value === true){
 			$this->server->getNameBans()->addBan($this->getName(), null, null, null);
@@ -86,11 +71,9 @@ class OfflinePlayer implements IPlayer, Metadatable{
 			$this->server->getNameBans()->remove($this->getName());
 		}
 	}
-
 	public function isWhitelisted(){
 		return $this->server->isWhitelisted(strtolower($this->getName()));
 	}
-
 	public function setWhitelisted($value){
 		if($value === true){
 			$this->server->addWhitelist(strtolower($this->getName()));
@@ -98,38 +81,28 @@ class OfflinePlayer implements IPlayer, Metadatable{
 			$this->server->removeWhitelist(strtolower($this->getName()));
 		}
 	}
-
 	public function getPlayer(){
 		return $this->server->getPlayerExact($this->getName());
 	}
-
 	public function getFirstPlayed(){
 		return $this->namedtag instanceof CompoundTag ? $this->namedtag["firstPlayed"] : null;
 	}
-
 	public function getLastPlayed(){
 		return $this->namedtag instanceof CompoundTag ? $this->namedtag["lastPlayed"] : null;
 	}
-
 	public function hasPlayedBefore(){
 		return $this->namedtag instanceof CompoundTag;
 	}
-
 	public function setMetadata($metadataKey, MetadataValue $metadataValue){
 		$this->server->getPlayerMetadata()->setMetadata($this, $metadataKey, $metadataValue);
 	}
-
 	public function getMetadata($metadataKey){
 		return $this->server->getPlayerMetadata()->getMetadata($this, $metadataKey);
 	}
-
 	public function hasMetadata($metadataKey){
 		return $this->server->getPlayerMetadata()->hasMetadata($this, $metadataKey);
 	}
-
 	public function removeMetadata($metadataKey, Plugin $plugin){
 		$this->server->getPlayerMetadata()->removeMetadata($this, $metadataKey, $plugin);
 	}
-
-
 }
