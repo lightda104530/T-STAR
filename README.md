@@ -21,27 +21,17 @@ T-STAR 是一個 **[PocketMine-MP](https://github.com/PocketMine/PocketMine-MP)*
 -------------
 If you have an issue, please make sure to check the [FAQs](https://github.com/iTXTech/Genisys/wiki/FAQs) page before opening any issues. We are constantly fixing issues and are continuously updating, so please also ensure that you are up-to-date before opening any issues.
 
-
-Discussion
+取得T-STAR
 -------------
-* __[Mattermost](https://mattermost.itxtech.org/itxtechnologies/channels/genisys)__
-* __[Gitter](https://gitter.im/iTXTech/Genisys?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)__
-* IRC: #genisys at freenode
+* 下載連結  製作中...
+* Windows安裝檔 製作中...
 
-Get Genisys
+工具
 -------------
-* Download from __[GitLab CI](https://gitlab.com/itxtech/genisys/pipelines?scope=branches)__ or __[Jenkins](https://ci.itxtech.org/job/Genisys/lastSuccessfulBuild/)__
-* Installation instructions can be found in the __[wiki](https://github.com/iTXTech/Genisys/wiki)__.
+* **[Genisys-DevTools](https://github.com/iTXTech/Genisys-DevTools)** - **插件及伺服器開發工具**
+* **[Pocket Server](https://github.com/fengberd/MinecraftPEServer)** - **在安桌手機上運行 PocketMine-MP/Nukkit**
 
-NOTE: **The master branch is the only officially supported branch.**
-_All other branches are in testing and may be unstable. Do not use builds from other branches unless you are sure you understand the risks._
-
-Tools
--------------
-* **[Genisys-DevTools](https://github.com/iTXTech/Genisys-DevTools)** - **Plugin and server development tools plugin**
-* **[Pocket Server](https://github.com/fengberd/MinecraftPEServer)** - **Run PocketMine-MP/Nukkit on Android devices**
-
-More
+更多
 -------------
 * __[More information](https://github.com/iTXTech/Genisys/wiki/More-information)__
 
