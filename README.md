@@ -4,7 +4,7 @@ T-STAR-nuclear
 一個全新的MinecraftPE & Windows 10 Edition Beta 的開服核心
 
 [![PayPal donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=itxtechnologiesllc%40gmail%2ecom&lc=GB&item_name=Genisys&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted)
-[![GitHub CI](https://gitlab.com/itxtech/genisys/badges/master/build.svg)](https://github.com/lightda104530/T-STAR)
+[![GitHub CI](https://gitlab.com/itxtech/genisys/badges/master/build.svg)](https://github.com/lightda104530/T-STAR-nuclear)
 
 
 介紹
