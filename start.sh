@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This is the start.sh file for Genisys
+# This is the start.sh file for T-STAR
 # Please input ./start.sh to start server
 
 # Variable define
@@ -48,16 +48,16 @@ if [ "$PHP_BINARY" == "" ]; then
 fi
 
 if [ "$POCKETMINE_FILE" == "" ]; then
-	if [ -f ./PocketMine-iTX.phar ]; then
-		POCKETMINE_FILE="./PocketMine-iTX.phar"
-	elif [ -f ./Genisys*.phar ]; then
-	    	POCKETMINE_FILE="./Genisys*.phar"
+	if [ -f ./PocketMine-TSTAR.phar ]; then
+		POCKETMINE_FILE="./PocketMine-TSTAR.phar"
+	elif [ -f ./T-STAR*.phar ]; then
+	    	POCKETMINE_FILE="./T-STAR*.phar"
 	elif [ -f ./PocketMine-MP.phar ]; then
 		POCKETMINE_FILE="./PocketMine-MP.phar"
 	elif [ -f ./src/pocketmine/PocketMine.php ]; then
 		POCKETMINE_FILE="./src/pocketmine/PocketMine.php"
 	else
-		echo "[ERROR] Couldn't find a valid Genisys installation."
+		echo "[ERROR] Couldn't find a valid T-STAR installation."
 		exit 1
 	fi
 fi
