@@ -21,10 +21,16 @@ if exist T-STAR*.phar (
 			if exist T-STAR.phar (
 				set POCKETMINE_FILE=T-STAR.phar
 			) else (
-		        echo "[ERROR] Couldn't find a valid T-STAR installation."
+		        echo "[ERROR] Couldn't find a valid Genisys installation."
 		        pause
 		        exit 8
 		    )
 	    )
 	)
+)
+
+if exist bin\mintty.exe (
+	start "" bin\mintty.exe -o Columns=88 -o Rows=32 -o AllowBlinking=0 -o FontQuality=3 -o Font="Consolas" -o FontHeight=10 -o CursorType=0 -o CursorBlinks=1 -h error -t "Genisys" -w max %PHP_BINARY% %POCKETMINE_FILE% --enable-ansi %*
+) else (
+	%PHP_BINARY% -c bin\php %POCKETMINE_FILE% %*
 )
