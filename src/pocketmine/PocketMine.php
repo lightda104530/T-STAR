@@ -72,11 +72,11 @@ namespace pocketmine {
 	use pocketmine\utils\Utils;
 	use pocketmine\wizard\Installer;
 
-	const VERSION = ""; //will be set by CI to a git hash
+	const VERSION = "TSR.TW"; //will be set by CI to a git hash
 	const API_VERSION = "2.0.0";
-	const CODENAME = "Kyrios";
-	const MINECRAFT_VERSION = "v0.15.10 alpha";
-	const MINECRAFT_VERSION_NETWORK = "0.15.10";
+	const CODENAME = "T-STAR";
+	const MINECRAFT_VERSION = "v0.16.0 alpha";
+	const MINECRAFT_VERSION_NETWORK = "0.16.0";
 	const GENISYS_API_VERSION = '1.9.3';
 
 	/*
@@ -155,7 +155,7 @@ namespace pocketmine {
 			//If system timezone detection fails or timezone is an invalid value.
 			if($response = Utils::getURL("http://ip-api.com/json")
 				and $ip_geolocation_data = json_decode($response, true)
-				and $ip_geolocation_data['status'] !== 'fail'
+				and $ip_geolocation_data['status'] != 'fail'
 				and date_default_timezone_set($ip_geolocation_data['timezone'])
 			){
 				//Again, for redundancy.
