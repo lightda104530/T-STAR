@@ -4,8 +4,6 @@ T-STAR
 一個全新的MinecraftPE & Windows 10 Edition Beta 的開服核心
 
 [![PayPal donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=itxtechnologiesllc%40gmail%2ecom&lc=GB&item_name=Genisys&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted)
-[![GitHub CI](https://gitlab.com/itxtech/genisys/badges/master/build.svg)](https://github.com/TSRTW/T-STAR)
-
 
 介紹
 -------------
@@ -19,34 +17,11 @@ T-STAR 是一個 **[PocketMine-MP](https://github.com/PocketMine/PocketMine-MP)*
 
 幫助 & 支援
 -------------
-如果對有任何疑問 [FAQs](https://github.com/iTXTech/Genisys/wiki/FAQs)  我們會不定時更新說明.
+目前只能使用開源方式開服,請將所有打案下載後解壓,使用start.cmd(Windows)或start.sh(Linux)開服
+
+請留下src與php環境
 
 取得T-STAR
 -------------
 * 下載連結  製作中...
 * Windows安裝檔 製作中...
-
-工具
--------------
-* **[Genisys-DevTools](https://github.com/iTXTech/Genisys-DevTools)** - **插件及伺服器開發工具**
-* **[Pocket Server](https://github.com/fengberd/MinecraftPEServer)** - **在安桌手機上運行 PocketMine-MP/Nukkit**
-
-更多
--------------
-* __[More information](https://github.com/iTXTech/Genisys/wiki/More-information)__
-
-Licence
--------------
-	This program is free software: you can redistribute it and/or modify
-	it under the terms of the GNU General Public License as published by
-	the Free Software Foundation, either version 3 of the License, or
-	(at your option) any later version.
-
-	This program is distributed in the hope that it will be useful,
-	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	GNU General Public License for more details.
-
-	You should have received a copy of the GNU General Public License
-	along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
