@@ -1,5 +1,4 @@
 <?php
-
 /*
  *
  *  ____            _        _   __  __ _                  __  __ ____  
@@ -18,30 +17,22 @@
  * 
  *
 */
-
 namespace pocketmine\network\protocol;
-
 #include <rules/DataPacket.h>
-
-
 class RespawnPacket extends DataPacket{
 	const NETWORK_ID = Info::RESPAWN_PACKET;
-
 	public $x;
 	public $y;
 	public $z;
-
 	public function decode(){
-		$this->x = $this->getFloat();
-		$this->y = $this->getFloat();
-		$this->z = $this->getFloat();
+		$this->x = $this->getLFloat();
+		$this->y = $this->getLFloat();
+		$this->z = $this->getLFloat();
 	}
-
 	public function encode(){
 		$this->reset();
-		$this->putFloat($this->x);
-		$this->putFloat($this->y);
-		$this->putFloat($this->z);
+		$this->putLFloat($this->x);
+		$this->putLFloat($this->y);
+		$this->putLFloat($this->z);
 	}
-
 }
