@@ -1,5 +1,4 @@
 <?php
-
 /*
  *
  *  ____            _        _   __  __ _                  __  __ ____  
@@ -18,27 +17,24 @@
  * 
  *
 */
-
 namespace pocketmine\network\protocol;
-
 #include <rules/DataPacket.h>
-
-
 class AnimatePacket extends DataPacket{
 	const NETWORK_ID = Info::ANIMATE_PACKET;
-
 	public $action;
 	public $eid;
-
+	public $unknownFloat; //TODO: find out what this is for (maybe an amplifier?)
 	public function decode(){
-		$this->action = $this->getByte();
-		$this->eid = $this->getLong();
+		$this->action = $this->getVarInt();
+		$this->eid = $this->getEntityId();
+		if(!$this->feof()){
+			$this->unknownFloat = $this->getLFloat(); //TODO: find out when this is sent (not always! >:-[)
+		}
 	}
-
 	public function encode(){
 		$this->reset();
-		$this->putByte($this->action);
-		$this->putLong($this->eid);
+		$this->getVarInt($this->action);
+		$this->putEntityId($this->eid);
+		$this->putLFloat($this->unknownFloat);
 	}
-
 }
