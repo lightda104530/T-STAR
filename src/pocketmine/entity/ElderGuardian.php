@@ -1,26 +1,30 @@
 <?php
 /*
  *
- *  ____          
- * |  __|_              _
- * | |__| |      _    _(_)_ __   ___
- * |  __| |_   _| |  | | | '_ \ / _ \
- * | |__| | | | | |/\| | | | | | (_) |
- * |____|_|\ \/ \__/\__/_|_| |_|\___ |
- *         _|  /                 __| |
- *        |___/                 |____/
+ * ________              ________                         _________     
+ *｜　　　 ｜ / ￣￣￣|  ｜　　　  ｜     /￣￣￣\          |   ___   |
+ * ￣|　|￣  | /￣￣      ￣|　|￣      / /￣￣\  \        |  |___|  |
+ *   |  |    \ \_____      |  |      /  /     \  \       |      ___| 
+ *   |  |     \_____  \    |  |     /  /_______\  \      |  |\  \
+ *   |  |           | |    |  |    /               \     |  | \  \
+ *   |  |      _____/ |    |  |   /  /￣￣￣￣￣￣\  \    |  |  \  \
+ *   |__|     |_______/    |__|  /  /             \  \   |__|   \__\
+ *
+ *
+ *
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * @author H4PM Team
- * @link http://www.github.net/H4PM  
+ * @author DockCreaTer Team
+ * @link http://www.github.com/DockCreaTer/
  * 
  *
 */
 namespace pocketmine\entity;
+
 use pocketmine\item\enchantment\Enchantment;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
 use pocketmine\event\entity\EntityDamageEvent;
@@ -31,6 +35,7 @@ use pocketmine\network\protocol\AddEntityPacket;
 use pocketmine\network\protocol\EntityEventPacket;
 use pocketmine\Player;
 use pocketmine\Server;
+
 class ElderGuardian extends WaterAnimal implements Ageable{
 	const NETWORK_ID = 50;
 	public $width = 1.45;
