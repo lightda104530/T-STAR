@@ -1,5 +1,4 @@
 <?php
-
 /*
  *
  *  _____   _____   __   _   _   _____  __    __  _____
@@ -18,15 +17,12 @@
  * @link https://itxtech.org
  *
  */
-
 namespace pocketmine\item;
-
-class SplashPotion extends Item{
+class SplashPotion extends ItemProjectile{
 	
 	public function __construct($meta = 0, $count = 1){
 		parent::__construct(self::SPLASH_POTION, $meta, $count, $this->getNameByMeta($meta));
 	}
-
 	public function getMaxStackSize() : int{
 		return 1;
 	}
@@ -34,6 +30,5 @@ class SplashPotion extends Item{
 	public function getNameByMeta(int $meta){
 		return "Splash ".Potion::getNameByMeta($meta);
 	}
-
 	
 }
