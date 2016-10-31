@@ -1,5 +1,4 @@
 <?php
-
 /*
  *
  *  _____   _____   __   _   _   _____  __    __  _____
@@ -18,12 +17,9 @@
  * @link https://itxtech.org
  *
  */
-
 namespace pocketmine\inventory;
-
 use pocketmine\item\Item;
 use pocketmine\item\enchantment\Enchantment;
-
 use pocketmine\block\StoneBricks;
 use pocketmine\block\Planks;
 use pocketmine\block\Stone;
@@ -34,7 +30,6 @@ use pocketmine\block\Wood2;
 use pocketmine\block\Slab as StoneSlab;
 use pocketmine\block\WoodSlab as WoodenSlab;
 use pocketmine\block\Quartz;
-
 use pocketmine\block\StoneWall;
 use pocketmine\block\Anvil;
 use pocketmine\block\Flower;
@@ -44,11 +39,9 @@ use pocketmine\block\Sapling;
 use pocketmine\block\Leaves;
 use pocketmine\block\Leaves2;
 use pocketmine\block\SkullBlock as Skull;
-
 use pocketmine\item\Coal;
 use pocketmine\item\Dye;
 use pocketmine\item\Potion;
-
 class CreativeItems{
 	
 	const CATEGORY_BUILDING = 0;
@@ -150,6 +143,9 @@ class CreativeItems{
 			["id" => Item::QUARTZ_BLOCK],
 			["id" => Item::QUARTZ_BLOCK, "meta" => Quartz::QUARTZ_PILLAR],
 			["id" => Item::QUARTZ_BLOCK, "meta" => Quartz::QUARTZ_CHISELED],
+			["id" => Item::PRISMARINE_BLOCK, "meta" => 0], //Prismarine Block
+			["id" => Item::PRISMARINE_BLOCK, "meta" => 2], //Prismarine Bricks Block
+			["id" => Item::PRISMARINE_BLOCK, "meta" => 1], //Dark Prismarine Block
 			["id" => Item::COAL_ORE],
 			["id" => Item::IRON_ORE],
 			["id" => Item::GOLD_ORE],
@@ -165,9 +161,11 @@ class CreativeItems{
 			["id" => Item::END_STONE],
 		],
 		self::CATEGORY_DECORATION => [
+			["id" => Item::BEACON_BLOCK],
 			["id" => Item::COBBLESTONE_WALL],
 			["id" => Item::COBBLESTONE_WALL, "meta" => StoneWall::MOSSY_WALL],
 			["id" => Item::LILY_PAD],
+			["id" => Item::SEA_LANTERN_BLOCK],
 			["id" => Item::GOLD_BLOCK],
 			["id" => Item::IRON_BLOCK],
 			["id" => Item::DIAMOND_BLOCK],
@@ -181,6 +179,7 @@ class CreativeItems{
 			["id" => Item::VINES],
 			["id" => Item::LADDER],
 			["id" => Item::SPONGE],
+			["id" => Item::SPONGE, "meta" => 1], //Wet Sponge
 			["id" => Item::GLASS_PANE],
 			["id" => Item::OAK_DOOR],
 			["id" => Item::SPRUCE_DOOR],
@@ -533,6 +532,7 @@ class CreativeItems{
 			["id" => Item::RAW_RABBIT],
 			["id" => Item::COOKED_RABBIT],
 			["id" => Item::RABBIT_STEW],
+			["id" => Item::NETHER_STAR],
 			["id" => Item::MAGMA_CREAM],
 			["id" => Item::BLAZE_ROD],
 			["id" => Item::GOLD_NUGGET],
@@ -549,6 +549,8 @@ class CreativeItems{
 			["id" => Item::FERMENTED_SPIDER_EYE],
 			["id" => Item::CARROT_ON_A_STICK],
 			["id" => Item::BOTTLE_O_ENCHANTING],
+			["id" => Item::PRISMARINE_SHARD],
+			["id" => Item::PRISMARINE_CRYSTALS],
 			/*["id" => Item::ENCHANTED_BOOK, "ench" => [["id" => Enchantment::TYPE_ARMOR_PROTECTION, "lvl" => 1]]],
 			["id" => Item::ENCHANTED_BOOK, "ench" => [["id" => Enchantment::TYPE_ARMOR_PROTECTION, "lvl" => 2]]],
 			["id" => Item::ENCHANTED_BOOK, "ench" => [["id" => Enchantment::TYPE_ARMOR_PROTECTION, "lvl" => 3]]],
@@ -719,5 +721,4 @@ class CreativeItems{
 			["id" => Item::SPLASH_POTION, "meta" => Potion::WEAKNESS_T],
 		],
 	];
-
 }
