@@ -1,5 +1,4 @@
 <?php
-
 /*
  *
  *  _____   _____   __   _   _   _____  __    __  _____
@@ -18,45 +17,35 @@
  * @link https://itxtech.org
  *
  */
-
 namespace pocketmine\block;
-
 use pocketmine\item\Tool;
 use pocketmine\item\Item;
 use pocketmine\level\sound\NoteblockSound;
 use pocketmine\math\Vector3;
 use pocketmine\Player;
-
 class Noteblock extends Solid implements ElectricalAppliance{
 	protected $id = self::NOTEBLOCK;
-
 	public function __construct($meta = 0){
 		$this->meta = $meta;
 	}
-
 	public function getHardness(){
 		return 0.8;
 	}
-
 	public function getResistance(){
 		return 4;
 	}
-
 	public function getToolType(){
 		return Tool::TYPE_AXE;
 	}
-
 	public function canBeActivated() : bool{
 		return true;
 	}
-
 	public function getStrength(){
 		if($this->meta < 24) $this->meta++;
 		else $this->meta = 0;
 		$this->getLevel()->setBlock($this, $this);
 		return $this->meta * 1;
 	}
-
 	public function getInstrument(){
 		$below = $this->getSide(Vector3::SIDE_DOWN);
 		switch($below->getId()){
@@ -132,7 +121,6 @@ class Noteblock extends Solid implements ElectricalAppliance{
 		}
 		return NoteblockSound::INSTRUMENT_PIANO;
 	}
-
 	public function onActivate(Item $item, Player $player = null){
 		$up = $this->getSide(Vector3::SIDE_UP);
 		if($up->getId() == 0){
@@ -142,7 +130,6 @@ class Noteblock extends Solid implements ElectricalAppliance{
 			return false;
 		}
 	}
-
 	public function getName() : string{
 		return "Noteblock";
 	}
